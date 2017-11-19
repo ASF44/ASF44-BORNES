@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bornes ASF44</string>
+    <string name="copyright">Airsoft44.com - Tous droits réservés</string>
+    <string name="descriptionLogoASF">Logo ASF44</string>
+    <string name="liste_dialog">Merci de vous connecter à la borne mère</string>
+
+    <!-- Boutons -->
+    <string name="btn_connexion_connecter">Connecter</string>
+    <string name="btn_connexion_deconnecter">Deconnecter</string>
+    <string name="btn_connexion_connexion">Connexion</string>
+
+    <!-- Champs -->
+    <string name="informationNbEquipes">Merci de saisir le nombre d\'équipes:</string>
+    <string name="btnValider">Valider</string>
+
+    <!-- Labels Layouts -->
+    <string name="nbEquipes">Nombres d\'équipes</string>
+</resources>

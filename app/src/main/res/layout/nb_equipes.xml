@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.airsoft44.bornes.bornesasf44.MainMenu">
+
+    <TextView
+        android:id="@+id/tv_explicationNbEquipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="356dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/informationNbEquipes"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nbEquipes"
+        tools:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10pt"
+        android:layout_marginEnd="25pt"
+        android:layout_marginStart="25pt"
+        android:text="@string/copyright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nbEquipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="421dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/nbEquipes"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:labelFor="@+id/et_nombreEquipes" />
+
+    <EditText
+        android:id="@+id/et_nombreEquipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="254dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/nbEquipes"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_explicationNbEquipes" />
+
+    <Button
+        android:id="@+id/btn_validerNbEquipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="118dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="87dp"
+        android:text="@string/btnValider"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombreEquipes" />
+
+</android.support.constraint.ConstraintLayout>
