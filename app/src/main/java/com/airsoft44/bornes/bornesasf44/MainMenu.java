@@ -70,8 +70,19 @@ public class MainMenu extends AppCompatActivity implements BluetoothSerialListen
     public void send(String value) {
         String send = value.trim();
         if (send.length() > 0) {
-            bluetoothSerial.write(send, false);
+            try {
+                bluetoothSerial.write(send, false);
+            } catch(Exception e) {
+                e.printStackTrace();
+            }
         }
+    }
+
+    public void lancerPartie(int tpsTotalCapture,int tpsChgtEquipe,int buzzer) {
+        String commandeLancement = "tpsCaptureTotal=" + tpsTotalCapture + ";tpsChgtEquipe=" + tpsChgtEquipe + ";buzzer=" + buzzer;
+        Log.d("LCTPARTIE",commandeLancement);
+
+        send(commandeLancement);
     }
 
     public void stopBluetooth() {
@@ -194,6 +205,7 @@ public class MainMenu extends AppCompatActivity implements BluetoothSerialListen
         Log.d("BLUETOOTHASF","Commande reçue: " + commande);
 
         if(commande.equals("100-0")) {
+            send("101");
             Intent intent = new Intent(this, LaunchGame.class);
             startActivity(intent);
         }

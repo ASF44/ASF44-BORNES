@@ -8,11 +8,18 @@
     <string name="btn_connexion_connecter">Connecter</string>
     <string name="btn_connexion_deconnecter">Deconnecter</string>
     <string name="btn_connexion_connexion">Connexion</string>
+    <string name="btn_lancer">Lancer</string>
 
     <!-- Champs -->
     <string name="informationNbEquipes">Merci de saisir le nombre d\'équipes:</string>
     <string name="btnValider">Valider</string>
+    <string name="tpsCaptureTotal">Temps de capture pour gagner</string>
+    <string name="tpsChgtEquipe">Tous les temps affichés doivent être en secondes</string>
+    <string name="infoConfigPartie">Temps de capture pour changer d\'équipes</string>
+    <string name="tvCheckboxBuzzer">Activer le buzzer ?</string>
+    <string name="nbEquipesEntree">Nombre d\'équipes: </string>
 
     <!-- Labels Layouts -->
     <string name="nbEquipes">Nombres d\'équipes</string>
+    <string name="configurationPartie">Configuration partie</string>
 </resources>

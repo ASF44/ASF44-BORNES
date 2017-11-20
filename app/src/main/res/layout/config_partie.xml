@@ -6,6 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.airsoft44.bornes.bornesasf44.MainMenu">
 
+    <EditText
+        android:id="@+id/et_tpsCaptureChgtEquipe"
+        android:layout_width="308dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="237dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/infoConfigPartie"
+        android:inputType="time"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tpsCaptureTotal" />
+
+    <TextView
+        android:id="@+id/tv_configurePartie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="421dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10pt"
+        android:text="@string/configurationPartie"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:labelFor="@+id/et_nombreEquipes" />
+
     <TextView
         android:id="@+id/tv_copyright"
         android:layout_width="wrap_content"
@@ -19,5 +51,77 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_tpsCaptureTotal"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="301dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="@string/tpsCaptureTotal"
+        android:inputType="time"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_configurePartie" />
+
+    <TextView
+        android:id="@+id/tv_infoConfigurePartie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tpsChgtEquipe"
+        app:layout_constraintBottom_toTopOf="@+id/et_tpsCaptureTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_configurePartie" />
+
+    <CheckBox
+        android:id="@+id/cb_buzzer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="167dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/tvCheckboxBuzzer"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tpsCaptureChgtEquipe" />
+
+    <Button
+        android:id="@+id/btn_lancer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="65dp"
+        android:text="@string/btn_lancer"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_buzzer" />
+
+    <TextView
+        android:id="@+id/tv_rappelNbEquipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="127dp"
+        android:text="@string/nbEquipesEntree"
+        app:layout_constraintBottom_toTopOf="@+id/tv_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_buzzer"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
