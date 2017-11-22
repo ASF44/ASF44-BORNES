@@ -88,7 +88,7 @@ public class ConfigEquipe  {
     }
 
 
-    public static ArrayList<ConfigEquipe> initPersons() {
+    public static ArrayList<ConfigEquipe> initTeam() {
         ArrayList<ConfigEquipe> list = new ArrayList<ConfigEquipe>();
 
         String[] names = new String[]{

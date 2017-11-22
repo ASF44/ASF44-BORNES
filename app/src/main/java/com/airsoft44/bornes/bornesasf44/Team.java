@@ -19,7 +19,7 @@ public class Team extends AppCompatActivity {
 
     ListView myListView;
     TextView tv;
-    Button button_plus, btn_moins,button_lancer;
+    Button button_plus, btn_moins , button_lancer;
     ConfigEquipe c;
     ConfigEquipe selectedTeam;
     ArrayAdapter<ConfigEquipe>  myAdapter;
@@ -38,16 +38,16 @@ public class Team extends AppCompatActivity {
     }
     private void loadElements(){
 
-        ListView myListView = (ListView) findViewById(R.id.listView);
-        TextView tv = (TextView) findViewById(R.id.textView_selectP);
-        Button button_plus = (Button) findViewById(R.id.button_plus);
-        Button btn_moins = (Button) findViewById(R.id.button_moins);
-        Button button_lancer = (Button) findViewById(R.id.lancer);
+        myListView =  findViewById(R.id.listView);
+        tv =  findViewById(R.id.textView_selectP);
+        button_plus =  findViewById(R.id.button_plus);
+        btn_moins =  findViewById(R.id.button_moins);
+        button_lancer =  findViewById(R.id.lancer);
 
     }
     private void loadList(){
 
-        list = ConfigEquipe.initPersons();
+        list = c.initTeam();
         myAdapter = new MyArrayAdapter ( Team.this , list );
         myListView.setAdapter(myAdapter);
     }
