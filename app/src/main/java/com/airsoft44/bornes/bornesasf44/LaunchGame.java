@@ -24,25 +24,25 @@ public class LaunchGame extends MainMenu {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nb_equipes);
+        setContentView(R.layout.team_list);
 
         etNbEquipes = findViewById(R.id.et_nombreEquipes);
         boutonValider = findViewById(R.id.btn_validerNbEquipes);
         boutonValider.setOnClickListener(clickBtnValider);
     }
 
-    public void configureEquipes() {
+    public void configureGame() {
         setContentView(R.layout.config_partie);
 
-        rappelNbEquipes = findViewById(R.id.tv_rappelNbEquipes);
-        boutonLancer = findViewById(R.id.btn_lancer);
-        ettpsCaptureTotal = findViewById(R.id.et_tpsCaptureTotal);
-        ettpsChgtEquipe = findViewById(R.id.et_tpsCaptureChgtEquipe);
-        cbBuzzer = findViewById(R.id.cb_buzzer);
+        //rappelNbEquipes = findViewById(R.id.tv_rappelNbEquipes);
+        //boutonLancer = findViewById(R.id.btn_lancer);
+        //ettpsCaptureTotal = findViewById(R.id.et_tpsCaptureTotal);
+        //ettpsChgtEquipe = findViewById(R.id.et_tpsCaptureChgtEquipe);
+        //cbBuzzer = findViewById(R.id.cb_buzzer);
 
-        rappelNbEquipes.append(String.valueOf(nbEquipes));
+        //rappelNbEquipes.append(String.valueOf(nbEquipes));
 
-        boutonLancer.setOnClickListener(clickBtnLancer);
+        //boutonLancer.setOnClickListener(clickBtnLancer);
 
     }
 
@@ -62,7 +62,7 @@ public class LaunchGame extends MainMenu {
                     return;
                 } else {
                     nbEquipes = nbEquipesInt;
-                    configureEquipes();
+                    configureGame();
                 }
             }
         }

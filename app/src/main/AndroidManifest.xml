@@ -11,16 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainMenu">
-        </activity>
+        <activity android:name=".MainMenu" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LaunchGame">
-        </activity>
+        <activity android:name=".LaunchGame" />
+        <activity android:name=".Team" />
+        <activity android:name=".AddTeam" />
     </application>
 
 </manifest>

@@ -11,7 +11,7 @@
     <string name="btn_lancer">Lancer</string>
 
     <!-- Champs -->
-    <string name="informationNbEquipes">Merci de saisir le nombre d\'équipes:</string>
+    <string name="informationNbEquipes">Merci de saisir le nom de l\'équipe:</string>
     <string name="btnValider">Valider</string>
     <string name="tpsCaptureTotal">Temps de capture pour gagner</string>
     <string name="tpsChgtEquipe">Tous les temps affichés doivent être en secondes</string>
@@ -20,6 +20,11 @@
     <string name="nbEquipesEntree">Nombre d\'équipes: </string>
 
     <!-- Labels Layouts -->
-    <string name="nbEquipes">Nombres d\'équipes</string>
+    <string name="nbEquipes">Ajout d\'équipes</string>
     <string name="configurationPartie">Configuration partie</string>
+    <string name="plus">+</string>
+    <string name="moin">-</string>
+    <string name="lancer">Lancer</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="ajout_d_quipes">Ajout d\'équipes</string>
 </resources>
